@@ -1,0 +1,42 @@
+﻿@model ServiceDetailsvm
+@section header{
+	Edit Service
+}
+<div class="col-md-12">
+	<div class="card card-primary">
+		<div class="card-header">
+			<h3 class="card-title">Update Service</h3>
+		</div>
+		<form asp-controller="Services" asp-action="Edit">
+			<div class="card-body">
+				<div class="form-group">
+					<label asp-for="Name">Service Name</label>
+					<input asp-for="Name" class="form-control" placeholder="Enter Name">
+				</div>
+				<div class="form-group">
+					<label asp-for="Id" typeof="hidden"></label>
+				</div>
+				<div class="form-group">
+					<label asp-for="Description">Service Description</label>
+					<input asp-for="Description" class="form-control" placeholder="Enter Description">
+				</div>
+				<div class="form-group">
+					<label asp-for="isDelete">Status</label>
+					<div class="form-check">
+						<input asp-for="isDelete" class="form-check-input" type="checkbox">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label asp-for="Data">Service Description</label>
+					<input asp-for="Data" class="form-control" >
+				</div>
+			</div>
+
+			<div class="card-footer">
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</div>
+		</form>
+	</div>
+
+

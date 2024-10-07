@@ -1,0 +1,38 @@
+﻿
+@model ServiceDetailsvm
+@section header {
+	Service Details
+}
+<div  class="col-md-12">
+	<div class="card">
+		<div class="card-header">
+			<h3 class="card-title">Service Details</h3>
+		</div>
+
+		<div class="card-body">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+						<th>Active</th>
+						<th>Data</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+                     <td>@Model.Name</td>
+						<td>@Model.Description</td>
+						<td>
+							@(Model.isDelete ? "Deleted" : "Not Deleted")
+						</td>
+						<td>@Model.Data</td>
+
+				    </tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</div>
+

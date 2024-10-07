@@ -1,7 +1,8 @@
+using System.Reflection;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using QuickStart.DAL.Data;
-
+using QuickStart.PL.Mapping;
 namespace QuickStart.DAL
 {
     public class Program
@@ -19,6 +20,7 @@ namespace QuickStart.DAL
             builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddControllersWithViews();
+            builder.Services.AddAutoMapper(Assembly.GetAssembly(typeof(MappingProfile)));
 
             var app = builder.Build();
 

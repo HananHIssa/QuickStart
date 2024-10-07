@@ -26,8 +26,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\hp\Desktop\mvc\QuickStart\QuickStart.PL
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/hp/Desktop/mvc/QuickStart/QuickStart.PL/Areas/Dashboard/Views/Catagory/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGFzaGJvYXJkXFZpZXdzXENhdGFnb3J5XEluZGV4LmNzaHRtbA==
+[C:/Users/hp/Desktop/mvc/QuickStart/QuickStart.PL/Areas/Dashboard/Views/catagory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGFzaGJvYXJkXFZpZXdzXGNhdGFnb3J5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/Desktop/mvc/QuickStart/QuickStart.PL/Areas/Dashboard/Views/Services/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGFzaGJvYXJkXFZpZXdzXFNlcnZpY2VzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/Desktop/mvc/QuickStart/QuickStart.PL/Areas/Dashboard/Views/Services/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGFzaGJvYXJkXFZpZXdzXFNlcnZpY2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/Desktop/mvc/QuickStart/QuickStart.PL/Areas/Dashboard/Views/Services/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGFzaGJvYXJkXFZpZXdzXFNlcnZpY2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/Desktop/mvc/QuickStart/QuickStart.PL/Areas/Dashboard/Views/Services/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGFzaGJvYXJkXFZpZXdzXFNlcnZpY2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hp/Desktop/mvc/QuickStart/QuickStart.PL/Areas/Dashboard/Views/Shared/_Footer.cshtml]

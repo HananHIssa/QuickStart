@@ -10,3 +10,4 @@ C:\Users\hp\Desktop\mvc\QuickStart\QuickStart.DAL\obj\Debug\net8.0\QuickStart.DA
 C:\Users\hp\Desktop\mvc\QuickStart\QuickStart.DAL\obj\Debug\net8.0\refint\QuickStart.DAL.dll
 C:\Users\hp\Desktop\mvc\QuickStart\QuickStart.DAL\obj\Debug\net8.0\QuickStart.DAL.pdb
 C:\Users\hp\Desktop\mvc\QuickStart\QuickStart.DAL\obj\Debug\net8.0\ref\QuickStart.DAL.dll
+C:\Users\hp\Desktop\mvc\QuickStart\QuickStart.DAL\obj\Debug\net8.0\QuickStart.DAL.sourcelink.json

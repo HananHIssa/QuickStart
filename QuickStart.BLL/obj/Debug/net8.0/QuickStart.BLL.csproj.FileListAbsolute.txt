@@ -13,3 +13,4 @@ C:\Users\hp\Desktop\mvc\QuickStart\QuickStart.BLL\obj\Debug\net8.0\QuickStart.BL
 C:\Users\hp\Desktop\mvc\QuickStart\QuickStart.BLL\obj\Debug\net8.0\refint\QuickStart.BLL.dll
 C:\Users\hp\Desktop\mvc\QuickStart\QuickStart.BLL\obj\Debug\net8.0\QuickStart.BLL.pdb
 C:\Users\hp\Desktop\mvc\QuickStart\QuickStart.BLL\obj\Debug\net8.0\ref\QuickStart.BLL.dll
+C:\Users\hp\Desktop\mvc\QuickStart\QuickStart.BLL\obj\Debug\net8.0\QuickStart.BLL.sourcelink.json
