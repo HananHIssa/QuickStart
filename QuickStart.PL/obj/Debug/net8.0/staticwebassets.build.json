@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "d7tZb1yFMGCYBXabz6+E3uoZE4NF/MhaqzLbAZkKuuU=",
+  "Hash": "+ygGsLC9LNAce4kNwEGpvbgadFwJ9rd6MuaZNC5UcHo=",
   "Source": "QuickStart.PL",
   "BasePath": "_content/QuickStart.PL",
   "Mode": "Default",
@@ -40257,6 +40257,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\files\\images\\69061bd4-0fc7-46a3-b2e9-a490eef351c3Screenshot 2024-10-07 111354.jpg",
+      "SourceId": "QuickStart.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\",
+      "BasePath": "_content/QuickStart.PL",
+      "RelativePath": "files/images/69061bd4-0fc7-46a3-b2e9-a490eef351c3Screenshot 2024-10-07 111354.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\images\\69061bd4-0fc7-46a3-b2e9-a490eef351c3Screenshot 2024-10-07 111354.jpg"
     },
     {
       "Identity": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\js\\site.js",

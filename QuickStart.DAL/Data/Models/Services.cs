@@ -11,6 +11,7 @@ namespace QuickStart.DAL.Data.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        public string imageName { get; set; }
         public bool isDelete { get; set; }
         public DateTime Data { get; set; }
     }

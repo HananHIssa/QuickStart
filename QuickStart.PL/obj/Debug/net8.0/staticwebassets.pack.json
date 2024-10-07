@@ -8229,6 +8229,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\files\\images\\69061bd4-0fc7-46a3-b2e9-a490eef351c3Screenshot 2024-10-07 111354.jpg",
+      "PackagePath": "staticwebassets\\files\\images\\69061bd4-0fc7-46a3-b2e9-a490eef351c3Screenshot 2024-10-07 111354.jpg"
+    },
+    {
       "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

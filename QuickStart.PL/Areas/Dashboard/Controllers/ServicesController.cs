@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using QuickStart.DAL.Data;
 using QuickStart.DAL.Data.Models;
 using QuickStart.PL.Areas.Dashboard.ViewModels;
+using QuickStart.PL.helpers;
 
 namespace QuickStart.PL.Areas.Dashboard.Controllers
 {		
@@ -37,15 +38,16 @@ namespace QuickStart.PL.Areas.Dashboard.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(ServicesFormVm vm)
         {
-            if(ModelState.IsValid)
-            {
-                var services = mappper.Map<Services>(vm);
-                context.Services.Add(services);
-                context.SaveChanges();
-                return RedirectToAction("Index");
+            if(!ModelState.IsValid)
+            { 
+                return View(vm);
             }
-            return View(vm);
-        }
+			vm.ImageName = FileSettings.UplodeFile(vm.Image, "images");
+			var services = mappper.Map<Services>(vm);
+			context.Services.Add(services);
+			context.SaveChanges();
+			return RedirectToAction("Index");
+		}
         [HttpGet]
         public IActionResult Details (int id)
         {
@@ -77,11 +79,14 @@ namespace QuickStart.PL.Areas.Dashboard.Controllers
 			return View(vm);
 		}
         public IActionResult Delete(int id)
-        {
-            var con = context.Services.Find(id);
+		{
+			var con = context.Services.Find(id);
+
+			if (con is null) return RedirectToAction("Index");
+			FileSettings.Delete(con.imageName, "images");
             context.Services.Remove(con);
             context.SaveChanges();
-            return RedirectToAction("Index");
-        }
+			return RedirectToAction("Index");
+		}
 	}
 }

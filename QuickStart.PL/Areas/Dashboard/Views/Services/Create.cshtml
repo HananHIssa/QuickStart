@@ -9,7 +9,7 @@
 		</div>
 
 
-		<form asp-controller="Services" asp-action="Create">
+		<form asp-controller="Services" asp-action="Create" enctype="multipart/form-data">
 			<div class="card-body">
 				<div class="form-group">
 					<label asp-for="Name">Service Name</label>
@@ -18,6 +18,10 @@
 				<div class="form-group">
 					<label asp-for="Description">Service Description</label>
 					<input asp-for="Description" class="form-control" placeholder="Enter Name">
+				</div>
+				<div class="form-group">
+					<label asp-for="Image">Uplode Image</label>
+					<input asp-for="Image" class="form-control-file">
 				</div>
 			</div>
 

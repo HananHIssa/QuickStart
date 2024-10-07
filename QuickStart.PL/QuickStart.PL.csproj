@@ -32,4 +32,9 @@
     <None Include="Areas\Dashboard\Views\_ViewStart.cshtml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\files\images\" />
+    <Folder Include="wwwroot\files\" />
+  </ItemGroup>
+
 </Project>

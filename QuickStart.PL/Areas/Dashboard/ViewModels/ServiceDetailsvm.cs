@@ -7,5 +7,7 @@
 		public string Description { get; set; }
 		public bool isDelete { get; set; }
 		public DateTime Data { get; set; }
+		public string ImageName { get; set; }
+
 	}
 }
