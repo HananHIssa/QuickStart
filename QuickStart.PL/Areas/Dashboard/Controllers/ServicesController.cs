@@ -86,7 +86,7 @@ namespace QuickStart.PL.Areas.Dashboard.Controllers
 			FileSettings.Delete(con.imageName, "images");
             context.Services.Remove(con);
             context.SaveChanges();
-			return RedirectToAction("Index");
+			return Ok(new {message= "ServiseDeleted" });
 		}
 	}
 }

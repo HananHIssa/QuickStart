@@ -269,3 +269,4 @@ C:\Users\hp\Desktop\mvc\QuickStart\QuickStart.PL\obj\Debug\net8.0\scopedcss\Area
 C:\Users\hp\Desktop\mvc\QuickStart\QuickStart.PL\obj\Debug\net8.0\QuickStart.PL.sourcelink.json
 C:\Users\hp\Desktop\mvc\QuickStart\QuickStart.PL\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\hp\Desktop\mvc\QuickStart\QuickStart.PL\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\hp\Desktop\mvc\QuickStart\QuickStart.PL\bin\Debug\net8.0\libman.json

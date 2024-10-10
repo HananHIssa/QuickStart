@@ -8225,12 +8225,64 @@
       "PackagePath": "staticwebassets\\dashboard\\plugins\\uplot\\uPlot.min.css"
     },
     {
+      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\datatable\\css\\datatable-bootstrap.css",
+      "PackagePath": "staticwebassets\\datatable\\css\\datatable-bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\datatable\\css\\datatable-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\datatable\\css\\datatable-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\datatable\\css\\datatable.css",
+      "PackagePath": "staticwebassets\\datatable\\css\\datatable.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\datatable\\css\\datatable.min.css",
+      "PackagePath": "staticwebassets\\datatable\\css\\datatable.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\datatable\\img\\sort_asc.png",
+      "PackagePath": "staticwebassets\\datatable\\img\\sort_asc.png"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\datatable\\img\\sort_both.png",
+      "PackagePath": "staticwebassets\\datatable\\img\\sort_both.png"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\datatable\\img\\sort_desc.png",
+      "PackagePath": "staticwebassets\\datatable\\img\\sort_desc.png"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\datatable\\js\\datatable.jquery.js",
+      "PackagePath": "staticwebassets\\datatable\\js\\datatable.jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\datatable\\js\\datatable.jquery.min.js",
+      "PackagePath": "staticwebassets\\datatable\\js\\datatable.jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\datatable\\js\\datatable.js",
+      "PackagePath": "staticwebassets\\datatable\\js\\datatable.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\datatable\\js\\datatable.min.js",
+      "PackagePath": "staticwebassets\\datatable\\js\\datatable.min.js"
+    },
+    {
       "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\files\\images\\69061bd4-0fc7-46a3-b2e9-a490eef351c3Screenshot 2024-10-07 111354.jpg",
-      "PackagePath": "staticwebassets\\files\\images\\69061bd4-0fc7-46a3-b2e9-a490eef351c3Screenshot 2024-10-07 111354.jpg"
+      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\files\\images\\3c58074d-6b7c-4f84-b106-86454de4d96ePararenabdaortaneur.jpg",
+      "PackagePath": "staticwebassets\\files\\images\\3c58074d-6b7c-4f84-b106-86454de4d96ePararenabdaortaneur.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\files\\images\\6b04449a-95ac-487f-ada3-c491a5d77e59Pararenabdaortaneur.jpg",
+      "PackagePath": "staticwebassets\\files\\images\\6b04449a-95ac-487f-ada3-c491a5d77e59Pararenabdaortaneur.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\files\\images\\6d012fc1-c701-4177-b58c-0213c58c8c60Hananissa.png",
+      "PackagePath": "staticwebassets\\files\\images\\6d012fc1-c701-4177-b58c-0213c58c8c60Hananissa.png"
     },
     {
       "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\js\\site.js",
