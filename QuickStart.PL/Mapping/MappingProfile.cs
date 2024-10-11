@@ -10,6 +10,7 @@ namespace QuickStart.PL.Mapping
 			CreateMap<ServicesFormVm, Services>().ReverseMap();
 			CreateMap<Services, vmService>().ReverseMap();
 			CreateMap<Services, ServiceDetailsvm>().ReverseMap();
+			CreateMap<EditViewModel, Services>().ReverseMap();
 		}
 	}
 }

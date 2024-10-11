@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cAiivMFXJ2+frgQTh778eXvjxq3UgEEuS+UigVAFqlM=",
+  "Hash": "rvpAQpu0IpE8KmH+6dEYZDiF2IBXRmiqjnqk3XOia30=",
   "Source": "QuickStart.PL",
   "BasePath": "_content/QuickStart.PL",
   "Mode": "Default",
@@ -40468,25 +40468,6 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\files\\images\\3c58074d-6b7c-4f84-b106-86454de4d96ePararenabdaortaneur.jpg",
-      "SourceId": "QuickStart.PL",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\",
-      "BasePath": "_content/QuickStart.PL",
-      "RelativePath": "files/images/3c58074d-6b7c-4f84-b106-86454de4d96ePararenabdaortaneur.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\images\\3c58074d-6b7c-4f84-b106-86454de4d96ePararenabdaortaneur.jpg"
-    },
-    {
       "Identity": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\files\\images\\6b04449a-95ac-487f-ada3-c491a5d77e59Pararenabdaortaneur.jpg",
       "SourceId": "QuickStart.PL",
       "SourceType": "Discovered",
@@ -40504,25 +40485,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\files\\images\\6b04449a-95ac-487f-ada3-c491a5d77e59Pararenabdaortaneur.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\files\\images\\6d012fc1-c701-4177-b58c-0213c58c8c60Hananissa.png",
-      "SourceId": "QuickStart.PL",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\",
-      "BasePath": "_content/QuickStart.PL",
-      "RelativePath": "files/images/6d012fc1-c701-4177-b58c-0213c58c8c60Hananissa.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\images\\6d012fc1-c701-4177-b58c-0213c58c8c60Hananissa.png"
     },
     {
       "Identity": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\js\\site.js",

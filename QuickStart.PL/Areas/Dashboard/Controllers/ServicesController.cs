@@ -36,48 +36,70 @@ namespace QuickStart.PL.Areas.Dashboard.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(ServicesFormVm vm)
-        {
-            if(!ModelState.IsValid)
-            { 
-                return View(vm);
-            }
-			vm.ImageName = FileSettings.UplodeFile(vm.Image, "images");
+		public IActionResult Create(ServicesFormVm vm)
+		{
+			if (!ModelState.IsValid)
+			{
+				return View(vm);
+			}
+
+			if (vm.Image != null)  // تحقق إذا كانت الصورة موجودة
+			{
+				vm.ImageName = FileSettings.UplodeFile(vm.Image, "images");
+			}
+
 			var services = mappper.Map<Services>(vm);
 			context.Services.Add(services);
 			context.SaveChanges();
 			return RedirectToAction("Index");
 		}
-        [HttpGet]
+
+
+		[HttpGet]
         public IActionResult Details (int id)
         {
 			return View(mappper.Map<ServiceDetailsvm>(context.Services.Find(id)));
 		}
         public IActionResult Edit(int id)
         {
-            var x = context.Services.Find(id);
-			return View(mappper.Map<ServiceDetailsvm>(context.Services.Find(id)));
-		}
-		[HttpPost]
-		[ValidateAntiForgeryToken]
-		public IActionResult Edit(ServiceDetailsvm vm)
-		{
-			if (ModelState.IsValid)
-			{
-				var x = context.Services.Find(vm.Id); 
-				if (x == null)
-				{
-					return NotFound();
-				}
-				mappper.Map(vm, x);
+            var service = context.Services.Find(id);
+            if (service == null)
+            {
+                return NotFound();
+            }
 
-				context.Services.Update(x);
-				context.SaveChanges(); 
+            var vm = mappper.Map<ServiceDetailsvm>(service);
+            return View(vm);
+        }
 
-				return RedirectToAction("Index");
-			}
-			return View(vm);
-		}
+        // تعديل الخدمة
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(ServiceDetailsvm vm)
+        {
+            var service = context.Services.Find(vm.Id);
+                if (service == null)
+                {
+                    return NotFound();
+                }
+                if(vm.image==null)
+                {
+                ModelState.Remove("image");
+                }
+                else
+                {
+                FileSettings.Delete(vm.ImageName, "images");
+                vm.ImageName = FileSettings.UplodeFile(vm.image, "images");
+
+                }
+            if (!ModelState.IsValid) return View(vm);
+                // تحديث البيانات
+                mappper.Map(vm, service);
+                context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+
         public IActionResult Delete(int id)
 		{
 			var con = context.Services.Find(id);
