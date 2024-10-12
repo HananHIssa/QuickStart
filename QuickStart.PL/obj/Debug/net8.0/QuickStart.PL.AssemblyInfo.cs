@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuickStart.PL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22777609a87c2e707c7c5a8416c68c3cf738d5b8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10c7b69263a167bbf8f3c6ec6e4297f16e77b566")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuickStart.PL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuickStart.PL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

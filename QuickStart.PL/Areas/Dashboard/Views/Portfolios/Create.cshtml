@@ -8,13 +8,15 @@
 			<h3 class="card-title">Create Portfolio</h3>
 		</div>
 
-		<form asp-controller="Portfolios" asp-action="Create">
+		<form asp-controller="Portfolios" asp-action="Create" enctype="multipart/form-data">
 			<div class="card-body">
 				<div class="form-group">
 					<label asp-for="Name">Portfolio Name</label>
 					<input asp-for="Name" class="form-control" placeholder="Enter Name">
 				</div>
-					</div>				
+				
+
+			</div>
 
 			<div class="card-footer">
 				<button type="submit" class="btn btn-primary">Submit</button>
