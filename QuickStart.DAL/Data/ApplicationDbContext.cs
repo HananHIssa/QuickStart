@@ -11,6 +11,9 @@ namespace QuickStart.DAL.Data
         {
         }
         public DbSet<Services> Services { get; set; }
+        public DbSet<Portfolio> Portfolios { get; set; }
+        public DbSet<Item> Items { get; set; }
+
     }
-    
+
 }

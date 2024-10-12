@@ -43,7 +43,7 @@ namespace QuickStart.PL.Areas.Dashboard.Controllers
 				return View(vm);
 			}
 
-			if (vm.Image != null)  // تحقق إذا كانت الصورة موجودة
+			if (vm.Image != null)  
 			{
 				vm.ImageName = FileSettings.UplodeFile(vm.Image, "images");
 			}

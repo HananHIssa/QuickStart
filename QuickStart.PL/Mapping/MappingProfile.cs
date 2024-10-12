@@ -11,6 +11,14 @@ namespace QuickStart.PL.Mapping
 			CreateMap<Services, vmService>().ReverseMap();
 			CreateMap<Services, ServiceDetailsvm>().ReverseMap();
 			CreateMap<EditViewModel, Services>().ReverseMap();
-		}
+
+			CreateMap<PortfolioFormVm, Portfolio>().ReverseMap();
+			CreateMap<Portfolio, vmPortfolio>().ReverseMap();
+			CreateMap<Portfolio, PortfolioeDetailsvm>().ReverseMap();
+
+            CreateMap<ItemsFormVm, Item>().ReverseMap();
+            CreateMap<Item, vmItem>().ReverseMap();
+            CreateMap<Item, ItemDetailsvm>().ReverseMap();
+        }
 	}
 }

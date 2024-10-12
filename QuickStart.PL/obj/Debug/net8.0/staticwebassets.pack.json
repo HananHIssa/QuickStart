@@ -201,6 +201,10 @@
       "PackagePath": "staticwebassets\\dashboard\\img\\photo4.jpg"
     },
     {
+      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\dashboard\\img\\portfolio-2048x1224.png",
+      "PackagePath": "staticwebassets\\dashboard\\img\\portfolio-2048x1224.png"
+    },
+    {
       "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\dashboard\\img\\prod-1.jpg",
       "PackagePath": "staticwebassets\\dashboard\\img\\prod-1.jpg"
     },
@@ -8275,6 +8279,22 @@
     {
       "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\files\\images\\6b04449a-95ac-487f-ada3-c491a5d77e59Pararenabdaortaneur.jpg",
       "PackagePath": "staticwebassets\\files\\images\\6b04449a-95ac-487f-ada3-c491a5d77e59Pararenabdaortaneur.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\files\\images\\d3c61940-7a09-4c8e-975f-a7c7c3e9aa23Screenshot 2024-10-11 152922.jpg",
+      "PackagePath": "staticwebassets\\files\\images\\d3c61940-7a09-4c8e-975f-a7c7c3e9aa23Screenshot 2024-10-11 152922.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\files\\images\\da9d0a8b-a712-49ee-b368-789c53f104d4Pararenabdaortaneur.jpg",
+      "PackagePath": "staticwebassets\\files\\images\\da9d0a8b-a712-49ee-b368-789c53f104d4Pararenabdaortaneur.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\files\\images\\e2025425-fad2-4d8d-9f16-6e18f70d658cCh[2].pdf",
+      "PackagePath": "staticwebassets\\files\\images\\e2025425-fad2-4d8d-9f16-6e18f70d658cCh[2].pdf"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\files\\images\\e784208c-89d8-4670-99d9-0eae8c19947cPararenabdaortaneur.jpg",
+      "PackagePath": "staticwebassets\\files\\images\\e784208c-89d8-4670-99d9-0eae8c19947cPararenabdaortaneur.jpg"
     },
     {
       "Id": "C:\\Users\\hp\\Desktop\\mvc\\QuickStart\\QuickStart.PL\\wwwroot\\js\\site.js",
