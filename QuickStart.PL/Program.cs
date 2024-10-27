@@ -1,58 +1,89 @@
 using System.Reflection;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using QuickStart.DAL.Data;
 using QuickStart.PL.Mapping;
+
 namespace QuickStart.DAL
 {
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            var builder = WebApplication.CreateBuilder(args);
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-            builder.Services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(connectionString));
-            builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+			// Add services to the container.
+			var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
+				?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 
-            builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
-            builder.Services.AddControllersWithViews();
-            builder.Services.AddAutoMapper(Assembly.GetAssembly(typeof(MappingProfile)));
+			builder.Services.AddDbContext<ApplicationDbContext>(options =>
+				options.UseSqlServer(connectionString));
+			builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-            var app = builder.Build();
+			// Add Identity services with roles
+			builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+				options.SignIn.RequireConfirmedAccount = false)
+				.AddEntityFrameworkStores<ApplicationDbContext>()
+				.AddDefaultTokenProviders();
 
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseMigrationsEndPoint();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
+			// Add AutoMapper
+			builder.Services.AddAutoMapper(Assembly.GetAssembly(typeof(MappingProfile)));
 
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
+			// Add Razor Pages and Controllers with Views
+			builder.Services.AddRazorPages();
+			builder.Services.AddControllersWithViews();
 
-            app.UseRouting();
+			// Add EmailSender service (Mock)
+			builder.Services.AddSingleton<IEmailSender, MockEmailSender>();
 
-            app.UseAuthorization();
-            app.MapControllerRoute(
-            name: "areas",
-            pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
-          );
+			var app = builder.Build();
 
-            app.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
-            app.MapRazorPages();
+			// Configure the HTTP request pipeline.
+			if (app.Environment.IsDevelopment())
+			{
+				app.UseMigrationsEndPoint();
+			}
+			else
+			{
+				app.UseExceptionHandler("/Home/Error");
+				app.UseHsts();
+			}
 
-            app.Run();
-        }
-    }
+			app.UseHttpsRedirection();
+			app.UseStaticFiles();
+
+			app.UseRouting();
+
+			// Authentication & Authorization
+			app.UseAuthentication();
+			app.UseAuthorization();
+
+			app.MapControllerRoute(
+				name: "areas",
+				pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+			);
+
+			app.MapControllerRoute(
+				name: "default",
+				pattern: "{controller=Home}/{action=Index}/{id?}"
+			);
+
+			app.MapRazorPages();
+
+			// Run the app
+			app.Run();
+		}
+	}
+
+	// MockEmailSender class implementation
+	public class MockEmailSender : IEmailSender
+	{
+		public Task SendEmailAsync(string email, string subject, string htmlMessage)
+		{
+			// Here you can add logic to simulate sending an email, like writing to the console
+			Console.WriteLine($"Sending email to: {email}, subject: {subject}");
+			return Task.CompletedTask;
+		}
+	}
 }

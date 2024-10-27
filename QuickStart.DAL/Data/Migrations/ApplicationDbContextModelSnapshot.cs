@@ -17,7 +17,7 @@ namespace QuickStart.DAL.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.4")
+                .HasAnnotation("ProductVersion", "8.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -47,6 +47,26 @@ namespace QuickStart.DAL.Data.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "68096b2c-3eda-4725-9443-4adee0cc110e",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        },
+                        new
+                        {
+                            Id = "3312042d-9224-49c8-b23e-82b21220ffe1",
+                            Name = "User",
+                            NormalizedName = "USER"
+                        },
+                        new
+                        {
+                            Id = "9bed7f4c-cf49-423a-bc6b-f5e1cd49ee2a",
+                            Name = "SuperAdmin",
+                            NormalizedName = "SUPERADMINE"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -137,6 +157,55 @@ namespace QuickStart.DAL.Data.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "3886e5ee-ddea-450a-88f5-7edd0155141b",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "bed13421-a2cb-492e-8e79-dd16cc00bc9c",
+                            Email = "user@comp.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "USER@COMP.COM",
+                            NormalizedUserName = "USER@COMP.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAEEHPNm1GLq5D0Gp/iBcSQhdf/kn94BU4w9+7jlV4UIEfn5Y3B9xbZ+oALMaQhht8fA==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "eb00d3fa-3d00-4717-8c60-7abd76c40b9e",
+                            TwoFactorEnabled = false,
+                            UserName = "user@comp.com"
+                        },
+                        new
+                        {
+                            Id = "0c48cff0-a76d-4d12-a21b-e6ce7a36782d",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "6203e0cc-f6e4-4abd-8f33-c2dc1f835e38",
+                            Email = "SuperAdmin@comp.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "SUPERADMIN@COMP.COM",
+                            NormalizedUserName = "SUPERADMIN@COMP.COM",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "93fd8230-1047-4b7d-85ca-3f744f5f9791",
+                            TwoFactorEnabled = false,
+                            UserName = "SuperAdmin@comp.com"
+                        },
+                        new
+                        {
+                            Id = "90971a41-7304-462a-8a63-d1f95a3ea014",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "7c88fd97-76c9-4f46-acf3-7ef566ccf94b",
+                            Email = "Adminuser@comp.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "ADMINEUSER@COMP.COM",
+                            NormalizedUserName = "ADMINUSER@COMP.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAEPhommGBcMf3ugCurTFeGS6K8pZY/4rY/Au3Uh9nQqFn+SYL2HOsIZnuX+k4b4iSeA==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "2ccb33dd-9522-4ded-aea0-eb28796004da",
+                            TwoFactorEnabled = false,
+                            UserName = "Adminuser@comp.com"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -201,6 +270,23 @@ namespace QuickStart.DAL.Data.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = "3886e5ee-ddea-450a-88f5-7edd0155141b",
+                            RoleId = "3312042d-9224-49c8-b23e-82b21220ffe1"
+                        },
+                        new
+                        {
+                            UserId = "0c48cff0-a76d-4d12-a21b-e6ce7a36782d",
+                            RoleId = "9bed7f4c-cf49-423a-bc6b-f5e1cd49ee2a"
+                        },
+                        new
+                        {
+                            UserId = "90971a41-7304-462a-8a63-d1f95a3ea014",
+                            RoleId = "68096b2c-3eda-4725-9443-4adee0cc110e"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -239,16 +325,16 @@ namespace QuickStart.DAL.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImageName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PortfolioId")
+                    b.Property<int?>("PortfolioId")
                         .HasColumnType("int");
-
-                    b.Property<string>("imageName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("isDelete")
                         .HasColumnType("bit");
@@ -369,9 +455,7 @@ namespace QuickStart.DAL.Data.Migrations
                 {
                     b.HasOne("QuickStart.DAL.Data.Models.Portfolio", "Portfolio")
                         .WithMany("Items")
-                        .HasForeignKey("PortfolioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("PortfolioId");
 
                     b.Navigation("Portfolio");
                 });

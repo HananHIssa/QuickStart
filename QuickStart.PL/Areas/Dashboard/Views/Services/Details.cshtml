@@ -24,7 +24,7 @@
 					<tbody>
 						<tr>
 							<td class="fw-bold">@Model.Name</td>
-							<td>@Model.Description</td>
+							<td>@Html.Raw(@Model.Description)</td>
 							<td>@(Model.isDelete ? "Deleted" : "Not Deleted")</td>
 							<td>@Model.Data.ToString("dd/MM/yyyy")</td>
 							<td>

@@ -7,6 +7,7 @@ using QuickStart.DAL.Data.Migrations;
 using QuickStart.DAL.Data.Models;
 using QuickStart.PL.Areas.Dashboard.ViewModels;
 using QuickStart.PL.helpers;
+using QuickStart.DAL.Data.Models;
 
 namespace QuickStart.PL.Areas.Dashboard.Controllers
 {
